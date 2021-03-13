@@ -6,4 +6,41 @@
 
 3. COM 组件，比较精准的获取网络是否能链接互联网，且反应最快消耗小。
 
+4. 通用的ping的方法，效果比第一种差一点
+
 命名空间 `System.Net.NetworkInformation.NetworkInterface` 下还有一个网路断开的事件，仅在wifi开关切换时触发事件。
+
+链接互联网时输出
+
+```cmd
+System.Net.NetworkInformation module     (True, 135ms)
+WIN32 Api                                (True, 12ms)
+COM Component                            (True, 8ms)
+Ping                                     (True, 84ms)
+```
+
+断开wifi后输出
+
+```cmd
+System.Net.NetworkInformation module     (True, 130ms)
+WIN32 Api                                (False, 11ms)
+COM Component                            (False, 8ms)
+Ping                                     (False, 82ms)
+```
+
+关闭Wifi开关后
+
+```cmd
+System.Net.NetworkInformation module     (True, 133ms)
+WIN32 Api                                (False, 11ms)
+COM Component                            (False, 8ms)
+Ping                                     (False, 87ms)
+```
+
+后两种都会引发异常
+
+`引发的异常:“System.Net.Sockets.SocketException”(位于 System.Net.NameResolution.dll 中)`
+
+`引发的异常:“System.Net.NetworkInformation.PingException”(位于 System.Net.Ping.dll 中)`
+
+| 本次测试 `System.Net.NetworkInformation` 下的组件始终没有变化
