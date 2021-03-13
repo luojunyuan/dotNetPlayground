@@ -37,10 +37,10 @@ COM Component                            (False, 8ms)
 Ping                                     (False, 87ms)
 ```
 
-后两种都会引发异常
+Ping 无法连接到网络时都会引发异常
 
 `引发的异常:“System.Net.Sockets.SocketException”(位于 System.Net.NameResolution.dll 中)`
 
 `引发的异常:“System.Net.NetworkInformation.PingException”(位于 System.Net.Ping.dll 中)`
 
-| 本次测试 `System.Net.NetworkInformation` 下的组件始终没有变化
+> 本次测试 `System.Net.NetworkInformation` 下的组件始终没有变化
