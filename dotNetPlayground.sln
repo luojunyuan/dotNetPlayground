@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetPlayground", "dotNetPlayground\dotNetPlayground.csproj", "{161C2C09-2478-4EDD-9F69-DA73DCF5FD57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetPlayground", "dotNetPlayground\dotNetPlayground.csproj", "{161C2C09-2478-4EDD-9F69-DA73DCF5FD57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker", "NetworkChecker\NetworkChecker.csproj", "{AA5FD47E-8E54-494C-B77E-884DFCB40E02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker", "NetworkChecker\NetworkChecker.csproj", "{AA5FD47E-8E54-494C-B77E-884DFCB40E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
