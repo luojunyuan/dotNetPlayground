@@ -8,6 +8,7 @@ namespace Benchmark
     {
         private static void Main()
         {
+            new SystemProcess();
         }
     }
 }
