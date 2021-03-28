@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker", "NetworkCh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benchmark.csproj", "{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftSqlitePractice", "MicrosoftSqlitePractice\MicrosoftSqlitePractice.csproj", "{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftSqlitePractice", "MicrosoftSqlitePractice\MicrosoftSqlitePractice.csproj", "{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareString", "CompareString\CompareString.csproj", "{5353DBA1-DD56-4181-B875-F4439B8FB91C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5353DBA1-DD56-4181-B875-F4439B8FB91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5353DBA1-DD56-4181-B875-F4439B8FB91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5353DBA1-DD56-4181-B875-F4439B8FB91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5353DBA1-DD56-4181-B875-F4439B8FB91C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
