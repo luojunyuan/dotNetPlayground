@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftSqlitePractice", "MicrosoftSqlitePractice\MicrosoftSqlitePractice.csproj", "{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareString", "CompareString\CompareString.csproj", "{5353DBA1-DD56-4181-B875-F4439B8FB91C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompareString", "CompareString\CompareString.csproj", "{5353DBA1-DD56-4181-B875-F4439B8FB91C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrightnessAdjust", "BrightnessAdjust\BrightnessAdjust.csproj", "{D2521833-D5A0-4153-AB90-7420C5C25A70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5353DBA1-DD56-4181-B875-F4439B8FB91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5353DBA1-DD56-4181-B875-F4439B8FB91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5353DBA1-DD56-4181-B875-F4439B8FB91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
