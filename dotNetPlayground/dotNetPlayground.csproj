@@ -5,4 +5,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Lucene.Net.Analysis.Kuromoji" Version="4.8.0-beta00014" />
+  </ItemGroup>
+
 </Project>

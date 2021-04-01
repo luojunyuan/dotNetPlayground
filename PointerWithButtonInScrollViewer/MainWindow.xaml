@@ -1,0 +1,63 @@
+﻿<Window x:Class="PointerWithButtonInScrollViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PointerWithButtonInScrollViewer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400" x:Name="myWin">
+
+    <StackPanel Orientation="Horizontal">
+        <Button Click="ButtonBase_OnClick"> aaaaa</Button>
+        <Label></Label>
+        <Label></Label>
+        <Label></Label>
+        <Label></Label>
+        <Label></Label>
+        <Label></Label>
+        <Label></Label>
+        <Label></Label>
+
+        <ScrollViewer PanningMode="Both" >
+            <!--// IsManipulationEnabled="False"  IsHitTestVisible="True"-->
+            <StackPanel Width="240" HorizontalAlignment="Left">
+                <Button x:Name="button" Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+                <Button Height="50" Click="ButtonBase_OnClick">sss</Button>
+                <Label></Label>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Window>
