@@ -22,15 +22,16 @@ Dxva的效果是调整显示器内置亮度，一般是支持显示器，所以�
 
 ### 注，须知：
 
-虽然林佬推荐首选Dxva2，但是使用Dxva2可能对杂牌显示器带来危害（比如低端凡硕），乱调整可能导致显示器直接不发光，怎么救都救不回来。只能用代码再改回来。
+1. 虽然林佬推荐首选Dxva2，但是使用Dxva2可能对杂牌显示器带来危害（比如低端凡硕），乱调整可能导致显示器直接不发光，怎么救都救不回来。只能用代码再改回来。
 
 ``` csharp
 // XXX: Do not use Dxva2, may cause damage to the monitor. `cur` gets 100 first time, set `min`, `max` 
 // between 22-85 is fine for one of my monitor, out of the range it's not glow anymore.
 ```
 
-当wpf程序代码访问WMI模块后，触控会升级到和uwp相似的效果，这个时候那些Scroll 滑条都无法触摸操作了。
+2. 当wpf程序代码访问WMI模块后，触控会升级到和uwp相似的效果，这个时候那些Scroll 滑条都无法触摸操作了。
 
 ### Reference
->
->
+> [WPF 修改屏幕亮度 (lindexi.com)](https://blog.lindexi.com/post/WPF-%E4%BF%AE%E6%94%B9%E5%B1%8F%E5%B9%95%E4%BA%AE%E5%BA%A6.html)
+> 
+> wmi 部分代码参考出处我忘记哪个仓库了
