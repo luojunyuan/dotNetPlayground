@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetPlayground", "dotNetPlayground\dotNetPlayground.csproj", "{161C2C09-2478-4EDD-9F69-DA73DCF5FD57}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker", "NetworkChecker\NetworkChecker.csproj", "{AA5FD47E-8E54-494C-B77E-884DFCB40E02}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benchmark.csproj", "{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}"
@@ -15,20 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrightnessAdjust", "Brightn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouchHooker", "TouchHooker\TouchHooker.csproj", "{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentMigratorPractice", "FluentMigratorPractice\FluentMigratorPractice.csproj", "{ADA44FBE-81F5-4905-83D0-714029850F45}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{972E8CE1-2D3D-4482-A736-27B8A2E262E6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{161C2C09-2478-4EDD-9F69-DA73DCF5FD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{161C2C09-2478-4EDD-9F69-DA73DCF5FD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{161C2C09-2478-4EDD-9F69-DA73DCF5FD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{161C2C09-2478-4EDD-9F69-DA73DCF5FD57}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,14 +39,6 @@ Global
 		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADA44FBE-81F5-4905-83D0-714029850F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADA44FBE-81F5-4905-83D0-714029850F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADA44FBE-81F5-4905-83D0-714029850F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADA44FBE-81F5-4905-83D0-714029850F45}.Release|Any CPU.Build.0 = Release|Any CPU
-		{972E8CE1-2D3D-4482-A736-27B8A2E262E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{972E8CE1-2D3D-4482-A736-27B8A2E262E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{972E8CE1-2D3D-4482-A736-27B8A2E262E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{972E8CE1-2D3D-4482-A736-27B8A2E262E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
