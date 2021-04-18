@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:TouchHooker"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="20, 10">
+        <Button Content="unhook" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1" Margin="381,58,0,0"/>
+        <Button Content="Install Touch Hook" HorizontalAlignment="Left" Margin="369,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.663" Click="Button_Click_2"/>
+        <Button Content="MouseClick Left" HorizontalAlignment="Left" Margin="70,42,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Click" HorizontalAlignment="Left" Margin="70,75,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+        <Label Content="AutoHotKey" HorizontalAlignment="Left" Margin="78,12,0,0" VerticalAlignment="Top"/>
+        <Button Content="Send Enter" HorizontalAlignment="Left" Margin="70,113,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
+        <Button Content="SendEvent(with move track works?)" HorizontalAlignment="Left" Margin="70,150,0,0" VerticalAlignment="Top" Click="Button_Click_5"/>
+        <Button Content="Click (delay between up and down)" HorizontalAlignment="Left" Margin="70,188,0,0" VerticalAlignment="Top" Click="Button_Click_6"/>
+        <Button Content="WindowInput Mouse Hook" HorizontalAlignment="Left" Margin="381,160,0,0" VerticalAlignment="Top" Click="Button_Click_7"/>
+        <Button Content="WindowInput Click(not work)" HorizontalAlignment="Left" Margin="381,193,0,0" VerticalAlignment="Top" Click="Button_Click_8"/>
+        <Button Content="Mouse_Event" HorizontalAlignment="Left" Margin="380,262,0,0" VerticalAlignment="Top" Click="Button_Click_9"/>
 
     </Grid>
 </Window>

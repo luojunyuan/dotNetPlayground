@@ -3,18 +3,21 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Threading.Tasks;
 using System.Windows.Documents;
+using System.Windows.Input;
+using AutoHotkey.Interop;
 
 namespace TouchHooker
 {
     public class DisableTouchConversionToMouse : IDisposable
     {
         static readonly LowLevelMouseProc hookCallback = HookCallback;
-        static IntPtr hookId = IntPtr.Zero;
+        static IntPtr _hookId = IntPtr.Zero;
 
         public DisableTouchConversionToMouse()
         {
-            hookId = SetHook(hookCallback);
+            _hookId = SetHook(hookCallback);
         }
 
         static IntPtr SetHook(LowLevelMouseProc proc)
@@ -31,6 +34,8 @@ namespace TouchHooker
 
         delegate IntPtr LowLevelMouseProc(int nCode, IntPtr wParam, IntPtr lParam);
 
+        private  static AutoHotkeyEngine _ahk = AutoHotkeyEngine.Instance;
+
         static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
         {
             if (nCode >= 0)
@@ -40,12 +45,26 @@ namespace TouchHooker
                 uint extraInfo = (uint)info.dwExtraInfo.ToInt64();
                 if ((extraInfo & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH)
                 {
-                    Trace.WriteLine($"{info.pt.x} {info.pt.y}");
-                    return new IntPtr(1);
+                    //Trace.WriteLine($"{info.pt.x} {info.pt.y} {wParam}"); // 514 517
+                    //ahk.ExecRaw("MouseClick, left");
+                    if ((int)wParam == 514)
+                    {
+                        Task.Run(
+                            () =>
+                            {
+                                _ahk.ExecRaw("Click, Down");
+                                _ahk.ExecRaw("Sleep 50");
+                                _ahk.ExecRaw("Click, Up");
+                            });
+
+                    }
+
+                    return UnsafeNativeMethods.CallNextHookEx(_hookId, nCode, wParam, lParam);
+                    //return new IntPtr(1);
                 }
             }
 
-            return UnsafeNativeMethods.CallNextHookEx(hookId, nCode, wParam, lParam);
+            return UnsafeNativeMethods.CallNextHookEx(_hookId, nCode, wParam, lParam);
         }
 
         bool disposed;
@@ -54,7 +73,7 @@ namespace TouchHooker
         {
             if (disposed) return;
 
-            UnsafeNativeMethods.UnhookWindowsHookEx(hookId);
+            UnsafeNativeMethods.UnhookWindowsHookEx(_hookId);
             disposed = true;
             GC.SuppressFinalize(this);
         }

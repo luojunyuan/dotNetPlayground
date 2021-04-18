@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="luojunyuan.autohotkey" Version="1.0.1" />
+    <PackageReference Include="WindowsInput" Version="6.2.1" />
+  </ItemGroup>
+
 </Project>

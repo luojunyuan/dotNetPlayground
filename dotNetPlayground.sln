@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrightnessAdjust", "Brightn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouchHooker", "TouchHooker\TouchHooker.csproj", "{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetPlayground", "dotNetPlayground\dotNetPlayground.csproj", "{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetRequest404ThrowExceptions", "NetRequest404ThrowExceptions\NetRequest404ThrowExceptions.csproj", "{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
