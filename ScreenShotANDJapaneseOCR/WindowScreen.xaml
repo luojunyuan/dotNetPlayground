@@ -1,0 +1,110 @@
+﻿<Window x:Class="ScreenShotANDJapaneseOCR.WindowScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenShotANDJapaneseOCR"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="Black"
+        WindowState="Maximized"
+        KeyDown="Window_KeyDown"
+        Loaded="Window_Loaded"
+        
+        Title="WindowScreen" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="templatePushButton" TargetType="RadioButton">
+            <Border x:Name="Part_Border" BorderThickness="1" BorderBrush="Gray" 
+                                        Background="{TemplateBinding Background}"
+                                        Margin="{TemplateBinding Margin}"
+                                        Padding="{TemplateBinding Padding}">
+                <ContentPresenter></ContentPresenter>
+            </Border>
+
+            <ControlTemplate.Triggers >
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter  TargetName="Part_Border"  Property="BorderBrush" Value="Blue"></Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter  TargetName="Part_Border"  Property="Background" Value="#FFb2dff9"></Setter>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <Style x:Key="stylePushButton" TargetType="RadioButton">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Padding" Value="8,5,8,5"></Setter>
+            <Setter Property="Template" Value="{StaticResource templatePushButton}"></Setter>
+        </Style>
+
+    </Window.Resources>
+    <!--<Grid Background="Green" >
+        --><!-- 整个屏幕图像 --><!--
+        <Image x:Name="imgScreen"
+               MouseDown="ImgScreen_MouseDown"
+               MouseUp="ImgScreen_MouseUp"
+               Stretch="None"           
+               MouseMove="ImgScreen_MouseMove">
+        </Image>
+
+        --><!-- 覆盖一层黑色，半透明状 --><!--
+        <Grid x:Name="gridCover" Visibility="Collapsed" Background="Black" Opacity="0.5">
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            --><!-- 前面覆盖了一层黑色，但是截取的图像不能覆盖，只能在这里再显示截取图像 --><!--
+            <Grid x:Name="gridCutImg"  
+                  MouseDown="ImgCut_MouseDown" 
+                  MouseMove="ImgCut_MouseMove"
+                   MouseUp="ImgCut_MouseUp">
+                <Image x:Name="imgCut" Grid.RowSpan="3" Stretch="None"                                                                    
+                   HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+                --><!--用来画箭头和文字--><!--
+                <Canvas x:Name="canvasEdit"  HorizontalAlignment='Left'
+                        VerticalAlignment="Top"  Background="Transparent">
+
+                </Canvas>
+            </Grid>
+
+            --><!--显示提示信息--><!--
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="22" Foreground="Yellow"
+                          Opacity="0.8" >滑动鼠标开始截屏 截图保存到剪切板 按ESC键退出</TextBlock>
+
+            <StackPanel  Grid.RowSpan="3">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                --><!--截图指示框--><!--
+                <Border x:Name="borderSelect" 
+                HorizontalAlignment="Left" VerticalAlignment="Top"
+                BorderThickness="1" BorderBrush="Red"></Border>
+                --><!--宽和高指示--><!--
+                <Grid  HorizontalAlignment="Stretch" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="txtCutInfo"  Padding="8,5,8,5" 
+                               HorizontalAlignment="Left"
+                              Background="White" VerticalAlignment="Center">1</TextBlock>
+                    <StackPanel x:Name="stackEdit" Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" Margin="2">
+                        <RadioButton x:Name="radioArrow" GroupName="editType" Click="RadioArrow_Click" Foreground="Black" Padding="10,5,10,5" Style="{StaticResource stylePushButton}">↑</RadioButton>
+                        <RadioButton  x:Name="radioText"  GroupName="editType" Click="RadioText_Click" Foreground="Black" Style="{StaticResource stylePushButton}">文</RadioButton>
+                        <RadioButton  x:Name="radioClose" Click="RadioClose_Click" Foreground="Red" Style="{StaticResource stylePushButton}">X</RadioButton>
+                    </StackPanel>
+                </Grid>
+
+            </StackPanel>
+
+        </Grid>
+    </Grid>-->
+</Window>
