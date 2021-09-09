@@ -4,8 +4,8 @@
 
 2. WIN32 API, ~~笔记本下测试，仅在关闭wifi开关后，才返回False~~
 
-* InternetGetConnectedState() (似乎不推荐)
-* INetworkListManager.GetConnectivity() 
+    * InternetGetConnectedState() (似乎不推荐)
+    * INetworkListManager.GetConnectivity() 
 
 3. COM 组件，比较精准的获取网络是否能链接互联网，且反应最快消耗小。(但是.Net Core却不受支持)
 
