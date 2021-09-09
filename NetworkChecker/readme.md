@@ -4,10 +4,10 @@
 
 2. WIN32 API, ~~笔记本下测试，仅在关闭wifi开关后，才返回False~~
 
-    * InternetGetConnectedState() (似乎不推荐)
+    * InternetGetConnectedState() (文档不推荐)
     * INetworkListManager.GetConnectivity() 
 
-3. COM 组件，比较精准的获取网络是否能链接互联网，且反应最快消耗小。(但是.Net Core却不受支持)
+3. COM 组件，比较精准的获取网络是否能链接互联网，且反应最快消耗小。(但是.Net Core却不受支持) (NetListMgr在win32 api中也提供了)
 
 4. 通用的ping的方法，效果比第一种差一点
 
