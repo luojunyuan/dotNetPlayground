@@ -5,19 +5,11 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker", "NetworkChecker\NetworkChecker.csproj", "{AA5FD47E-8E54-494C-B77E-884DFCB40E02}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benchmark.csproj", "{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftSqlitePractice", "MicrosoftSqlitePractice\MicrosoftSqlitePractice.csproj", "{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrightnessAdjust", "BrightnessAdjust\BrightnessAdjust.csproj", "{D2521833-D5A0-4153-AB90-7420C5C25A70}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouchHooker", "TouchHooker\TouchHooker.csproj", "{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetPlayground", "dotNetPlayground\dotNetPlayground.csproj", "{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetRequest404ThrowExceptions", "NetRequest404ThrowExceptions\NetRequest404ThrowExceptions.csproj", "{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenShotANDJapaneseOCR", "ScreenShotANDJapaneseOCR\ScreenShotANDJapaneseOCR.csproj", "{4C7F4887-D329-4988-B3C7-48AF7DB1BCD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScreenShotANDJapaneseOCR", "ScreenShotANDJapaneseOCR\ScreenShotANDJapaneseOCR.csproj", "{4C7F4887-D329-4988-B3C7-48AF7DB1BCD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,30 +21,14 @@ Global
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA5FD47E-8E54-494C-B77E-884DFCB40E02}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45D7CA88-FB75-4B95-B0EB-FDDF9BF6EA70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC17F47B-8E0E-4F48-AE2C-7A5F317ED575}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2521833-D5A0-4153-AB90-7420C5C25A70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EA2CBD6-192E-4E3D-81DA-2A37395091BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C99B3FFF-30C6-47C0-8044-D4D3CB813A82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E56A8CF-B642-42D1-9E7B-53A8B2085E11}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C7F4887-D329-4988-B3C7-48AF7DB1BCD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C7F4887-D329-4988-B3C7-48AF7DB1BCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C7F4887-D329-4988-B3C7-48AF7DB1BCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU

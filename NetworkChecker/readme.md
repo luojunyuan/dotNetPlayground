@@ -7,7 +7,7 @@
     * InternetGetConnectedState() (文档不推荐)
     * INetworkListManager.GetConnectivity() 
 
-3. COM 组件，比较精准的获取网络是否能链接互联网，且反应最快消耗小。(但是.Net Core却不受支持) (NetListMgr在win32 api中也提供了)
+3. COM 组件，比较精准的获取网络是否能链接互联网，且反应最快消耗小。(但是引入COM组件 .Net Core却不受支持) (注：NetListMgr在win32 api中也提供了)
 
 4. 通用的ping的方法，效果比第一种差一点
 
